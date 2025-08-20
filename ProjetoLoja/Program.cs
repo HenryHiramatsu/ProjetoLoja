@@ -1,8 +1,15 @@
+using ProjetoLoja.Repositoirio;
+
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+//Registrar Repositório
+builder.Services.AddScoped<ProdutoRepositorio>();
+builder.Services.AddScoped<CarrinhoRepositorio>();
+builder.Services.AddScoped<PedidoRepositorio>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,3 +28,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
