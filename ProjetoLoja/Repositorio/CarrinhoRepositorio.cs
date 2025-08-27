@@ -1,4 +1,4 @@
-﻿namespace ProjetoLoja.Repositoirio
+﻿namespace ProjetoLoja.Repositorio
 {
     public class CarrinhoRepositorio
     {
