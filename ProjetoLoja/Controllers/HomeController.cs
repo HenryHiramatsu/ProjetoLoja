@@ -12,9 +12,10 @@ namespace ProjetoLoja.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly ProdutoRepositorio _produtoRepositorio;
        
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ProdutoRepositorio produtoRepositorio)
         {
             _logger = logger;
+            _produtoRepositorio = produtoRepositorio;
         }
 
         public async Task<IActionResult> Index()

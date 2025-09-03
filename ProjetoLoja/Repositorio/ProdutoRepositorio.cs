@@ -1,6 +1,7 @@
 ﻿using ProjetoLoja.Models;
 using MySql.Data.MySqlClient;
 using Dapper;
+using LojaProdutosAsp.Models;
 
 namespace ProjetoLoja.Repositorio
 {
@@ -15,7 +16,7 @@ namespace ProjetoLoja.Repositorio
         public async Task<IEnumerable<Produto>> TodosProdutos()
         {
             using var connection = new MySqlConnection(_connectionString);
-            var sql = "select Id, Nome, Descricao, Preco, ImageUrl, Estoque FROM Produto";
+            var sql = "select Id, Nome, Descricao, Preco, ImagemUrl, Estoque FROM Produto";
             return await connection.QueryAsync<Produto>(sql);
         }
     }
