@@ -69,5 +69,3 @@ namespace ProjetoLoja.Controllers
             _carrinhoRepositorio.LimparCarrinho(HttpContext.Session);
             return RedirectToAction("Index");
         }
-    }
-}

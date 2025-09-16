@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using ProjetoLoja.Models;
-
+using ProjetoLoja.Models;
 
 namespace ProjetoLoja.Repositorio
 {

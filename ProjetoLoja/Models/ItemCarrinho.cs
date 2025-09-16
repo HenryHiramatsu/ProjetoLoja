@@ -1,11 +1,9 @@
 ﻿using ProjetoLoja.Models;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProjetoLoja.Models
 {
     public class ItemCarrinho
     {
-
         public int ProdutoId { get; set; }
 
         public Produto Produto { get; set; }
