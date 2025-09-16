@@ -2,7 +2,6 @@
 using ProjetoLoja.Repositorio;
 
 
-
 namespace ProjetoLoja.Controllers
 {
     public class CarrinhoController : Controller

@@ -1,9 +1,6 @@
-﻿/*newtonsoft.json é uma biblioteca para a linguagem de programação .NET que serve para serializar 
-(converter objetos para o formato JSON) e desserializar (converter texto JSON de volta para objetos) 
-dados JSON de forma eficiente e flexível.
-*/
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using ProjetoLoja.Models;
+
 
 namespace ProjetoLoja.Repositorio
 {

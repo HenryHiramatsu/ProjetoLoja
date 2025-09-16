@@ -2,7 +2,6 @@
 using MySql.Data.MySqlClient;
 using Dapper;
 
-
 namespace ProjetoLoja.Repositorio
 {
     public class ProdutoRepositorio
@@ -13,24 +12,17 @@ namespace ProjetoLoja.Repositorio
         {
             _connectionString = connectionString;
         }
-
-        public async Task<IEnumerable<Produto?>> TodosProdutos()
+        public async Task<IEnumerable<Produto>> TodosProdutos()
         {
             using var connection = new MySqlConnection(_connectionString);
-            var sql = "SELECT Id, Nome, Descricao, Preco, ImagemUrl, Estoque FROM Produto";
+            var sql = "select Id, Nome, Descricao, Preco, ImagemUrl, Estoque FROM Produto";
             return await connection.QueryAsync<Produto>(sql);
         }
-
-
         public async Task<Produto?> ProdutosPorId(int id)
         {
             using var connection = new MySqlConnection(_connectionString);
-            var sql = "SELECT Id, Nome, Descricao, Preco, ImagemUrl, Estoque FROM produto WHERE Id = @Id";
+            var sql = "SELECT Id, Nome, Descricao, Preco, ImagemUrl, Estoque FROM Produto WHERE Id = @Id";
             return await connection.QueryFirstOrDefaultAsync<Produto>(sql, new { Id = id });
         }
-
-
     }
-
-
 }
