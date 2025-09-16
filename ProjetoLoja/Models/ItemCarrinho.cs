@@ -1,4 +1,4 @@
-﻿using LojaProdutosAsp.Models;
+﻿using ProjetoLoja.Models;
 
 namespace ProjetoLoja.Models
 {

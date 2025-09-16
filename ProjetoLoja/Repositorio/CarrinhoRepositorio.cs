@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 using ProjetoLoja.Models;
-using ProjetoLoja3d.Models;
+using ProjetoLoja.Models;
 
-namespace ProjetoLoja3d.Repositorio
+namespace ProjetoLoja.Repositorio
 {
     public class CarrinhoRepositorio
     {
